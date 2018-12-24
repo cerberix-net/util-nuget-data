@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
+    <Authors>pacjman@cerberix.net</Authors>
+    <Company>cerberix.net</Company>
+    <Description>dapper data access module for dot net standard</Description>
+    <RepositoryUrl>https://github.com/cerberix-net/util-nuget-dataaccess/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.0-pre00</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/cerberix-net/util-nuget-dataaccess/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-nuget-dataaccess/master/img/cerberix.png</PackageIconUrl>
+    <PackageId>Cerberix.DataAccess.Dapper</PackageId>
+    <Product>Cerberix.DataAccess.Dapper</Product>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cerberix.DataAccess.Core" Version="1.0.0-pre01" />
+    <PackageReference Include="Dapper" Version="1.50.5" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cerberix.DataAccess.Core", "Cerberix.DataAccess.Core\Cerberix.DataAccess.Core.csproj", "{6A781771-63B1-465F-BAE8-BB3DBCB38402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cerberix.DataAccess.Dapper", "Cerberix.DataAccess.Dapper\Cerberix.DataAccess.Dapper.csproj", "{7E96F4DE-2EA6-4EC8-9F99-43D280CE3759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A781771-63B1-465F-BAE8-BB3DBCB38402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A781771-63B1-465F-BAE8-BB3DBCB38402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A781771-63B1-465F-BAE8-BB3DBCB38402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A781771-63B1-465F-BAE8-BB3DBCB38402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E96F4DE-2EA6-4EC8-9F99-43D280CE3759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E96F4DE-2EA6-4EC8-9F99-43D280CE3759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E96F4DE-2EA6-4EC8-9F99-43D280CE3759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E96F4DE-2EA6-4EC8-9F99-43D280CE3759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD7B1EEE-276D-4CB2-AFAD-846A654DF238}
+	EndGlobalSection
+EndGlobal
