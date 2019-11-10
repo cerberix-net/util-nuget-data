@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Cerberix.DataAccess.Core
+namespace Cerberix.DataAccess
 {
     public interface IDbConnectionAsync
     {
@@ -12,18 +12,25 @@ namespace Cerberix.DataAccess.Core
             DbConnectionCommandType? commandType = null
             );
 
+        Task<TResult> ExecuteScalar<TResult> (
+            string sql,
+            object param = null,
+            int? commandTimeout = null,
+            DbConnectionCommandType? commandType = null
+            ) where TResult : struct;
+
         Task<IEnumerable<TResult>> Query<TResult>(
             string sql,
             object param = null,
             int? commandTimeout = null,
             DbConnectionCommandType? commandType = null
-            );
+            ) where TResult: class, new();
 
-        Task<TResult> QueryScalar<TResult>(
+        Task<TResult> QuerySingle<TResult>(
             string sql,
             object param = null,
             int? commandTimeout = null,
             DbConnectionCommandType? commandType = null
-            );
+            ) where TResult : class, new();
     }
 }

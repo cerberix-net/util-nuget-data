@@ -1,4 +1,4 @@
-﻿namespace Cerberix.DataAccess.Core
+﻿namespace Cerberix.DataAccess
 {
     public enum DbConnectionCommandType
     {

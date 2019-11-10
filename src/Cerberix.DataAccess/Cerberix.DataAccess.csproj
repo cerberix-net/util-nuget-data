@@ -3,19 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
-    <Authors>pacjman@cerberix.net</Authors>
+    <Authors>hai@cerberix.net</Authors>
     <Company>cerberix.net</Company>
     <Description>core data access module for dot net standard</Description>
     <RepositoryUrl>https://github.com/cerberix-net/util-nuget-dataaccess/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0-pre01</Version>
+    <Version>1.1.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl>https://github.com/cerberix-net/util-nuget-dataaccess/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/cerberix-net/util-nuget-dataaccess/master/img/cerberix.png</PackageIconUrl>
-    <PackageId>Cerberix.DataAccess.Core</PackageId>
-    <Product>Cerberix.DataAccess.Core</Product>
+    <PackageId>Cerberix.DataAccess</PackageId>
+    <Product>Cerberix.DataAccess</Product>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
   </PropertyGroup>
 
