@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data;
-using Cerberix.DataAccess.Core;
 
 namespace Cerberix.DataAccess.Dapper
 {

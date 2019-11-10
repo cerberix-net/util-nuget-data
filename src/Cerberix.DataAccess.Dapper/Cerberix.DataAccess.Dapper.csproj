@@ -3,12 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RuntimeIdentifiers>win7-x64</RuntimeIdentifiers>
-    <Authors>pacjman@cerberix.net</Authors>
+    <Authors>hai@cerberix.net</Authors>
     <Company>cerberix.net</Company>
     <Description>dapper data access module for dot net standard</Description>
     <RepositoryUrl>https://github.com/cerberix-net/util-nuget-dataaccess/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0-pre00</Version>
+    <Version>1.1.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -20,7 +20,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cerberix.DataAccess.Core" Version="1.0.0-pre01" />
+    <PackageReference Include="Cerberix.DataAccess" Version="1.1.0" />
+    <PackageReference Include="Cerberix.Extension.Core" Version="1.0.0" />
     <PackageReference Include="Dapper" Version="1.50.5" />
   </ItemGroup>
 

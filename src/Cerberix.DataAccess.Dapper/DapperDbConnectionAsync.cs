@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
-using Cerberix.DataAccess.Core;
+using Cerberix.Extension.Core;
 using Dapper;
 
 namespace Cerberix.DataAccess.Dapper
@@ -30,12 +30,27 @@ namespace Cerberix.DataAccess.Dapper
                 );
         }
 
+        public Task<TResult> ExecuteScalar<TResult>(
+            string sql,
+            object param = null,
+            int? commandTimeout = null,
+            DbConnectionCommandType? commandType = null
+            ) where TResult: struct
+        {
+            return _dbConnection.ExecuteScalarAsync<TResult>(
+                sql: sql,
+                param: param,
+                commandTimeout: commandTimeout,
+                commandType: commandType?.ToCommandType()
+                );
+        }
+
         public Task<IEnumerable<TResult>> Query<TResult>(
             string sql,
             object param = null,
             int? commandTimeout = null,
             DbConnectionCommandType? commandType = null
-            )
+            ) where TResult: class, new()
         {
             return _dbConnection.QueryAsync<TResult>(
                 sql: sql,
@@ -45,19 +60,19 @@ namespace Cerberix.DataAccess.Dapper
                 );
         }
 
-        public Task<TResult> QueryScalar<TResult>(
+        public Task<TResult> QuerySingle<TResult>(
             string sql,
             object param = null,
             int? commandTimeout = null,
             DbConnectionCommandType? commandType = null
-            )
+            ) where TResult : class, new()
         {
-            return _dbConnection.ExecuteScalarAsync<TResult>(
+            return _dbConnection.QueryAsync<TResult>(
                 sql: sql,
                 param: param,
                 commandTimeout: commandTimeout,
                 commandType: commandType?.ToCommandType()
-                );
+                ).SingleAsync();
         }
     }
 }
